@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Touristry</title>
+  <!-- aboutus linking  -->
+
+
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+  <!-- custom css file link  -->
+  <link rel="stylesheet" href="F:\travelwebsite\travelwebsite\zoos.html">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+  <script src="./js/form.js"></script>
+
+</head>
+
+<body>
+
+  <!-- header section starts  -->
+
+  <header class="header">
+
+    <a href="#" class="logo"> <i class="fas fa-hiking"></i> Touristry </a>
+
+    <nav class="navbar">
+      <div id="nav-close" class="fas fa-times"></div>
+      <a href="#home">home</a>
+      <a href="about.html" target="_blank">about</a>
+      <a href="F:\travelwebsite\travelwebsite\login.html" target="_blank">Login</a>
+      <a href="#reviews" target="_blank">reviews</a>
+      <a onclick="signOut()" id="signOut" href="login.html">Signout</a>
+      <a href="#blogs">Explore</a>
+    </nav>
+
+    <div class="icons">
+      <div id="menu-btn" class="fas fa-bars"></div>
+
+      <div id="search-btn" class="fas fa-search"></div>
+    </div>
+
+  </header>
+
+  <!-- header section ends -->
+
+  <!-- search form  -->
+
+  <div class="search-form">
+
+    <div id="close-search" class="fas fa-times"></div>
+
+    <form action="">
+      <input type="search" name="" placeholder="search here..." id="search-box">
+      <label for="search-box" class="fas fa-search"></label>
+    </form>
+  </div>
+
+  <!-- home section starts  -->
+
+  <section class="home" id="home">
+
+    <div class="swiper home-slider">
+
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="box" style="background: url(images/home-bg-1.jpg) no-repeat;">
+            <div class="content">
+              <span>never stop</span>
+              <h3>exploring</h3>
+              <p style="font-style:50px;">Tourism boosts the revenue of the economy, creates thousands of jobs, develops the infrastructures of a country, and plants a sense of cultural exchange between foreigners and citizens.</p>
+              <a href="" class="btn" target="_blank">get started </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="box second" style="background: url(images/home-bg-2.jpg) no-repeat;">
+            <div class="content">
+              <span>make tour</span>
+              <h3>amazing</h3>
+              <p>Tourism boosts the revenue of the economy, creates thousands of jobs, develops the infrastructures of a country, and plants a sense of cultural exchange between foreigners and citizens.</p>
+              <a href="#" class="btn">get started</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="box" style="background: url(https://www.traveltourister.com/admin/include/upload/service/detail5c592f6fe266fBest-Incredible-Places-to-Visit-in-Assam.jpg">
+            <div class="content">
+
+              <a href="#" class="btn">get started</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+    </div>
+
+  </section>
+
+  <!-- home section ends -->
+
+  <!-- category section starts  -->
+
+  <section class="category">
+
+    <h1 class="heading">adventure Places!</h1>
+
+    <div class="box-container">
+
+      <div class="box">
+        <img src="https://www.holidify.com/images/cmsuploads/compressed/Sandylonariphotografy_20181113202038_20181113202524.jpg" alt="">
+        <h3>Forts</h3>
+        <p>जाती धर्माच्या भिंती भेदून, माणसाला माणुसकीने जगायला शिकवणारे राज्य म्हणजे शिवरायांचे स्वराज्य</p>
+        <a href="F:\travelwebsite\Forts\index.html" class="btn" target="_blank">read more</a>
+      </div>
+
+      <div class="box">
+        <img src="https://i.pinimg.com/564x/f0/82/80/f082801c4491ada6351be0c357303673.jpg" alt="">
+        <h3>Worship</h3>
+        <p>वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा सर्वकार्येषु सर्वदा</p>
+        <a href="F:\travelwebsite\travelwebsite\Worship\worship.html" class="btn">read more</a>
+      </div>
+
+      <div class="box">
+        <img src="https://www.fabhotels.com/blog/wp-content/uploads/2018/09/Shaniwar-wada.jpg" alt="">
+        <h3>Historical Places</h3>
+        <p>आपण प्रवास करतो घरापासून दूर जाण्यासाठी नाही तर आयुष्य खऱ्या अर्थाने जगण्यासाठी.</p>
+        <a href="F:\travelwebsite\travelwebsite\HP\IT Parks.html" class="btn">read more</a>
+      </div>
+
+      <div class="box">
+        <img src="C:\Users\ICON\Downloads\travel website\travel website\button images\z.jpeg" alt="">
+        <h3>Zoo and Gardens</h3>
+        <p>The city is not a concrete jungle, it is a human zoo</p>
+        <a href="F:\travelwebsite\travelwebsite\zoopics\zoos.html" class="btn">Zoo</a>
+        <a href="F:\travelwebsite\travelwebsite\Garden\gardens.html" class="btn">Gardens</a>
+      </div>
+
+      <div class="box">
+        <img src="https://images.indianexpress.com/2020/08/dam-1.jpg" alt="">
+        <h3>Dams</h3>
+        <p>This dam is very famous for picnics and weekend gateway.
+Water supply to city of Pune is from this source.</p>
+        <a href="#" class="btn">read more</a>
+      </div>
+
+
+      <div class="box">
+        <img src="https://community.nestaway.com/info/wp-content/uploads/2019/02/eon-free-zone-696x420.png" alt="">
+        <h3>IT Park</h3>
+        <p>They provide infrastructure and support services for businesses, particularly high quality (high capacity) communications, real estate and office space.</p>
+        <a href="F:\travelwebsite\travelwebsite\IT parks\IT Parks.html" class="btn">read more</a>
+      </div>
+
+    </div>
+
+
+  </section>
+
+  <!-- category section ends -->
+
+  <!-- about section starts  -->
+
+  <section class="about" id="about">
+
+    <div class="image">
+
+      <img src="https://thumbs.dreamstime.com/b/pune-skyline-color-buildings-blue-sky-reflections-vector-illustration-business-travel-tourism-concept-historic-93385064.jpg" alt="">
+
+    </div>
+
+    <div class="content">
+      <h3>memorable outdoor experiences</h3>
+      <p>
+        Camping near Pawna Lake <br>
+        Visit Shaniwar Wada Palace <br>
+        Chill at Cafe Paashh <br>
+        Visit Aga Khan Palace <br>
+        Experience The ‘Art of Living’ At The Osho Ashram <br>
+        Bazaar Walk through Pune Kasba <br>
+        Trek To Sinhagad Fort <br>
+        Go For A Picnic At Pashan Lake
+      </p>
+
+
+    </div>
+
+  </section>
+
+  <!-- about section ends -->
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.2086772500616!2d73.85312881420407!3d18.519469774042946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c065144d8edf%3A0x3703b8095866c54b!2sShaniwar%20Wada!5e0!3m2!1sen!2sin!4v1648189280623!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
+
+
+  <!-- reviews section starts  -->
+
+  <section class="reviews" id="reviews">
+
+    <h1 class="heading">reviews</h1>
+
+    <div class="swiper review-slider">
+
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide slide">
+          <p class="text">One of my best tour
+          </p>
+          <div class="user">
+            <img src="images/pic-1.png" alt="">
+            <div class="info">
+              <h3>Shubham Kulkarni</h3>
+              <span>Senior Software Developer</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide slide">
+          <p class="text">
+          </p>
+          <div class="user">
+            <img src="images/pic-2.png" alt="">
+            <div class="info">
+              <h3>Raj Dixit</h3>
+              </h3>
+              <span>Software Tester</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide slide">
+          <p class="text">Its a really nice application. Very informative for a person new to Pune. Thank u
+          </p>
+          <div class="user">
+            <img src="images/pic-3.png" alt="">
+            <div class="info">
+              <h3>Rohit Patil</h3>
+              <span>Manager</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide slide">
+          <p class="text">Best website ever to roam around the city.. great work by the Touristry Guide team !!!
+          </p>
+          <div class="user">
+            <img src="images/pic-4.png" alt="">
+            <div class="info">
+              <h3>Rahul Desai</h3>
+              <span>Data Scientist</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide slide">
+          <p class="text">Extremely useful app and awesome feature. Very well designed and developed. Keep it up 👍
+          </p>
+          <div class="user">
+            <img src="images/pic-5.png" alt="">
+            <div class="info">
+              <h3>Varad Patil</h3>
+              <span>App Developer</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide slide">
+          <p class="text">Its an amazing website for helping anyone to visit Pune, soo thankfully am so satisfied 😊😊
+          </p>
+          <div class="user">
+            <img src="images/pic-6.png" alt="">
+            <div class="info">
+              <h3>Mansi Joshi</h3>
+              <span>designer</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- reviews section ends -->
+
+  <!-- services section starts  -->
+
+  <section class="services">
+
+    <h1 class="heading"> what we offer </h1>
+
+    <div class="box-container">
+
+      <div class="box">
+        <img src="images/serv-1.png" alt="">
+        <h3>complete guide</h3>
+        <p>Planning a trip can feel like both the most exciting AND the most overwhelming part of travel.</p>
+
+      </div>
+
+      <div class="box">
+        <img src="images/serv-2.png" alt="">
+        <h3>custom packages</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, nihil?</p>
+          </div>
+
+
+      <div class="box">
+        <img src="images/serv-3.png" alt="">
+        <h3>family trips</h3>
+        <p>“Sometimes you will never know the value of a moment until it becomes memory.”</p>
+      </div>
+
+
+
+
+        <div class="box">
+          <img src="images/serv-4.png" alt="">
+          <h3>train guides</h3>
+          <p>The station of the city is named as PUNE JUNCTION and its station code is PUNE. The station takes care of all the basic amenities of the passengers.
+
+          </p>
+
+        </div>
+
+        <div class="box">
+          <img src="images/serv-5.png" alt="">
+          <h3>adventure trail</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, nihil?</p>
+        </div>
+
+        <div class="box">
+          <img src="images/serv-6.png" alt="">
+          <h3>various adventures</h3>
+          <p>Kudos to the ones who are always looking for fun things to do in Pune.</p>
+        </div>
+
+      </div>
+
+  </section>
+
+  <!-- services section ends -->
+
+  <!-- blogs section starts  -->
+
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- blogs section ends -->
+
+  <!-- newsletter section  -->
+
+
+
+  <section class="clients">
+
+    <div class="swiper clients-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide silde"><img src="images/client-logo-1.png" alt=""></div>
+        <div class="swiper-slide silde"><img src="images/client-logo-2.png" alt=""></div>
+        <div class="swiper-slide silde"><img src="images/client-logo-3.png" alt=""></div>
+        <div class="swiper-slide silde"><img src="images/client-logo-4.png" alt=""></div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- footer section starts  -->
+
+  <section class="footer">
+
+    <div class="box-container">
+
+      <div class="box">
+        <h3>quick links</h3>
+        <a href="#home">home</a>
+        <a href="F:\travelwebsite\travelwebsite\about.html" target="_blank">about</a>
+
+
+        <a href="#reviews" target="_blank">reviews</a>
+        <a href="#blogs">Explore</a>
+      </div>
+
+      <div class="box">
+        <h3>extra links</h3>
+        <a href="#">my account</a>
+        <a href="#">my order</a>
+        <a href="#">my wishlist</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdvUOFkJyw1eArAJ4k81lwiOGvnMX_rl4sYSzqMzmeYjE0fjg/viewform?usp=sf_link" target="_blank">ask questions</a>
+        <a href="#">terms of use</a>
+        <a href="#">privacy policy</a>
+      </div>
+
+      <div class="box">
+        <h3>contact info</h3>
+        <a href="#"> <i class="fas fa-phone"></i>+917420988104 </a>
+        <a href="#"> <i class="fas fa-phone"></i>+919021554530 </a>
+        <a href="#"> <i class="fas fa-envelope"></i> mahesh.deshmukh21@vit.edu </a>
+        <a href="#"> <i class="fas fa-map"></i> Pune, india - 411002 </a>
+      </div>
+
+      <div class="box">
+        <h3>follow us</h3>
+        <a href="https://www.facebook.com/mahesh.deshmukh.7505468/" target="_blank"> <i class="fab fa-facebook-f"></i> facebook </a>
+        <a href="https://twitter.com/MaheshD99621576" target="_blank"> <i class="fab fa-twitter"></i> twitter </a>
+        <a href="https://www.instagram.com/?hl=en" target="_blank"> <i class="fab fa-instagram"></i> instagram </a>
+        <a href="https://www.linkedin.com/in/mahesh-deshmukh-2689471aa/" target="_blank"> <i class="fab fa-linkedin"></i> linkedin </a>
+      </div>
+
+    </div>
+
+    <div class="credit">created by <span>DIVISION: E B2-GROUP</span> | all rights reserved!</div>
+    <div class="credit">Managed By <span>mahesh Deshmukh</span></div>
+
+  </section>
+
+  <!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+  <!-- custom js file link  -->
+  <script src="js/script.js"></script>
+
+  html
+
+</body>
+
+</html>

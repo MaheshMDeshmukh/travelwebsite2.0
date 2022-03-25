@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Touristry</title>
+      <!-- aboutus linking  -->
+
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+	<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+<script src="./js/form.js"></script>
+
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo"> <i class="fas fa-hiking"></i> Touristry </a>
+
+    <nav class="navbar">
+        <div id="nav-close" class="fas fa-times"></div>
+        <a href="#home">home</a>
+        <a href="about.html" target="_blank">about</a>
+        <a href="#reviews" target="_blank">reviews</a>
+		<a onclick="signOut()" id="signOut">Signout</a>
+        <a href="#blogs">Explore</a>
+    </nav>
+
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+        <div id="search-btn" class="fas fa-search"></div>
+    </div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- search form  -->
+
+<div class="search-form">
+
+    <div id="close-search" class="fas fa-times"></div>
+
+    <form action="">
+        <input type="search" name="" placeholder="search here..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+</div>
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="swiper home-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <div class="box" style="background: url(images/home-bg-1.jpg) no-repeat;">
+                    <div class="content">
+                        <span>never stop</span>
+                        <h3>exploring</h3>
+                        <p style="font-style:50px;">Tourism boosts the revenue of the economy, creates thousands of jobs, develops the infrastructures of a country, and plants a sense of cultural exchange between foreigners and citizens.</p>
+                        <a href="#" class="btn">get started</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="box second" style="background: url(images/home-bg-2.jpg) no-repeat;">
+                    <div class="content">
+                        <span>make tour</span>
+                        <h3>amazing</h3>
+                        <p>Tourism boosts the revenue of the economy, creates thousands of jobs, develops the infrastructures of a country, and plants a sense of cultural exchange between foreigners and citizens.</p>
+                        <a href="#" class="btn">get started</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="box" style="background: url(images/map.jpg) no-repeat;">
+                    <div class="content">
+
+                        <a href="#" class="btn">get started</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- category section starts  -->
+
+<section class="category">
+
+    <h1 class="heading">adventure Places!</h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="C:\Users\ICON\Downloads\travel website\travel website\button images\Forts.jpeg" alt="">
+            <h3>Forts</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, id.</p>
+            <a href="C:\Users\ICON\Downloads\travel website\travel website\forts.html" class="btn" target="_blank">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="C:\Users\ICON\Downloads\travel website\travel website\button images\wp.jpeg" alt="">
+            <h3>Worship</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, id.</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="C:\Users\ICON\Downloads\travel website\travel website\button images\hp.jpeg" alt="">
+            <h3>HISTORICAL PLACES</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, id.</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="C:\Users\ICON\Downloads\travel website\travel website\button images\z.jpeg" alt="">
+            <h3>Zoo and Gardens</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, id.</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="C:\Users\ICON\Downloads\travel website\travel website\button images\the_statue_of_unity_dribbble_4x.jpg" alt="">
+            <h3>Dams</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, id.</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+
+        <div class="box">
+            <img src="C:\Users\ICON\Downloads\travel website\travel website\button images\the_statue_of_unity_dribbble_4.jpg" alt="">
+            <h3>IT Park</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, id.</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- category section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <div class="image">
+        <img src="HD-wallpaper-pune-city-love-pune.jpg" alt="">
+
+    </div>
+
+    <div class="content">
+        <h3>memorable outdoor experiences</h3>
+        <p><ul>
+          <li>Phoenix Market City
+
+          </li>Phoenix Market City
+
+        </ul> </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dicta doloremque placeat porro, ipsam quia at beatae atque odit iste?</p>
+        <a href="#" class="btn">read more</a>
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+
+
+
+
+<!-- reviews section starts  -->
+
+<section class="reviews" id="reviews">
+
+    <h1 class="heading">client's reviews</h1>
+
+    <div class="swiper review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quidem laborum pariatur alias, culpa illum quaerat, aliquid laboriosam voluptatem nisi repellat obcaecati, adipisci esse ab delectus dolorum ut recusandae ipsam?</p>
+                <div class="user">
+                    <img src="images/pic-1.png" alt="">
+                    <div class="info">
+                        <h3>Shubham Kulkarni</h3>
+                        <span>Senior Software Developer</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quidem laborum pariatur alias, culpa illum quaerat, aliquid laboriosam voluptatem nisi repellat obcaecati, adipisci esse ab delectus dolorum ut recusandae ipsam?</p>
+                <div class="user">
+                    <img src="images/pic-2.png" alt="">
+                    <div class="info">
+                        <h3>Raj Dixit</h3></h3>
+                        <span>Software Tester</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quidem laborum pariatur alias, culpa illum quaerat, aliquid laboriosam voluptatem nisi repellat obcaecati, adipisci esse ab delectus dolorum ut recusandae ipsam?</p>
+                <div class="user">
+                    <img src="images/pic-3.png" alt="">
+                    <div class="info">
+                        <h3>Rohit Patil</h3>
+                        <span>Manager</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quidem laborum pariatur alias, culpa illum quaerat, aliquid laboriosam voluptatem nisi repellat obcaecati, adipisci esse ab delectus dolorum ut recusandae ipsam?</p>
+                <div class="user">
+                    <img src="images/pic-4.png" alt="">
+                    <div class="info">
+                        <h3>Rahul Desai</h3>
+                        <span>Data Scientist</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quidem laborum pariatur alias, culpa illum quaerat, aliquid laboriosam voluptatem nisi repellat obcaecati, adipisci esse ab delectus dolorum ut recusandae ipsam?</p>
+                <div class="user">
+                    <img src="images/pic-5.png" alt="">
+                    <div class="info">
+                        <h3>Varad Patil</h3>
+                        <span>App Developer</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quidem laborum pariatur alias, culpa illum quaerat, aliquid laboriosam voluptatem nisi repellat obcaecati, adipisci esse ab delectus dolorum ut recusandae ipsam?</p>
+                <div class="user">
+                    <img src="images/pic-6.png" alt="">
+                    <div class="info">
+                        <h3>Mansi Joshi</h3>
+                        <span>designer</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- reviews section ends -->
+
+<!-- services section starts  -->
+
+<section class="services">
+
+    <h1 class="heading"> what we offer </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/serv-1.png" alt="">
+            <h3>complete guide</h3>
+            <p>Planning a trip can feel like both the most exciting AND the most overwhelming part of travel.</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="images/serv-2.png" alt="">
+            <h3>custom packages</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, nihil?</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="images/serv-3.png" alt="">
+            <h3>family trips</h3>
+            <p>“Sometimes you will never know the value of a moment until it becomes memory.”</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="images/serv-4.png" alt="">
+            <h3>train guides</h3>
+            <p>The station of the city is named as PUNE JUNCTION and its station code is PUNE. The station takes care of all the basic amenities of the passengers.
+
+</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="images/serv-5.png" alt="">
+            <h3>adventure trail</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, nihil?</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="images/serv-6.png" alt="">
+            <h3>various adventures</h3>
+            <p>Kudos to the ones who are always looking for fun things to do in Pune.</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- services section ends -->
+
+<!-- blogs section starts  -->
+
+<section class="blogs" id="blogs">
+
+    <h1 class="heading"> our daily posts </h1>
+
+    <div class="swiper blogs-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <img src="images/img-1.jpg" alt="">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-calendar"></i> 21st jan, 2022 </a>
+                    <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                </div>
+                <h3>blog title goes here.</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, deserunt.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class="swiper-slide slide">
+                <img src="images/img-2.jpg" alt="">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-calendar"></i> 21st jan, 2022 </a>
+                    <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                </div>
+                <h3>blog title goes here.</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, deserunt.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class="swiper-slide slide">
+                <img src="images/img-3.jpg" alt="">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-calendar"></i> 21st jan, 2022 </a>
+                    <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                </div>
+                <h3>blog title goes here.</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, deserunt.</p>
+                <a href="#"  class="btn">read more</a>
+            </div>
+
+            <div class="swiper-slide slide">
+                <img src="images/img-4.jpg" alt="">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-calendar"></i> 21st may, 2021 </a>
+                    <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                </div>
+                <h3>blog title goes here.</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, deserunt.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class="swiper-slide slide">
+                <img src="images/img-5.jpg" alt="">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-calendar"></i> 21st may, 2021 </a>
+                    <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                </div>
+                <h3>blog title goes here.</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, deserunt.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class="swiper-slide slide">
+                <img src="images/img-6.jpg" alt="">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-calendar"></i> 21st may, 2021 </a>
+                    <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                </div>
+                <h3>blog title goes here.</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, deserunt.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- blogs section ends -->
+
+<!-- newsletter section  -->
+
+
+
+<section class="clients">
+
+    <div class="swiper clients-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide silde"><img src="images/client-logo-1.png" alt=""></div>
+            <div class="swiper-slide silde"><img src="images/client-logo-2.png" alt=""></div>
+            <div class="swiper-slide silde"><img src="images/client-logo-3.png" alt=""></div>
+            <div class="swiper-slide silde"><img src="images/client-logo-4.png" alt=""></div>
+        </div>
+    </div>
+
+</section>
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#home">home</a>
+            <a href="C:\Users\ICON\Downloads\travel website\travel website\about.html" target="_blank">about</a>
+
+
+            <a href="#reviews" target="_blank">reviews</a>
+            <a href="#blogs">Explore</a>
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="#">my account</a>
+            <a href="#">my order</a>
+            <a href="#">my wishlist</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdvUOFkJyw1eArAJ4k81lwiOGvnMX_rl4sYSzqMzmeYjE0fjg/viewform?usp=sf_link" target="_blank">ask questions</a>
+            <a href="#">terms of use</a>
+            <a href="#">privacy policy</a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#"> <i class="fas fa-phone"></i>+917420988104 </a>
+            <a href="#"> <i class="fas fa-phone"></i>+919021554530 </a>
+            <a href="#"> <i class="fas fa-envelope"></i> mahesh.deshmukh21@vit.edu </a>
+            <a href="#"> <i class="fas fa-map"></i> Pune, india - 411002 </a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="https://www.facebook.com/mahesh.deshmukh.7505468/" target="_blank"> <i class="fab fa-facebook-f"></i> facebook </a>
+            <a href="https://twitter.com/MaheshD99621576" target="_blank"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="https://www.instagram.com/?hl=en" target="_blank"> <i class="fab fa-instagram"></i> instagram </a>
+            <a href="https://www.linkedin.com/in/mahesh-deshmukh-2689471aa/" target="_blank"> <i class="fab fa-linkedin"></i> linkedin </a>
+        </div>
+
+    </div>
+
+    <div class="credit">created by <span>TILL PROJECT SUBMISSION E2-GROUP</span> | all rights reserved!</div>
+      <div class="credit">Managed By <span>mahesh  Deshmukh</span></div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+html
+
+</body>
+</html>
